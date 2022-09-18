@@ -11,10 +11,9 @@ const novoItem = (texto, status = '', indice) => {
     item.classList.add('clsItem');
     item.innerHTML = `
     <tr>
-        <th scope="row">${indice}</th>
-        <td>
-            <input class="form-check-input" type="checkbox" ${status} data-indice=${indice} >
-        </td>
+        <th scope="row">
+        <input class="form-check-input" type="checkbox" ${status} data-indice=${indice} >
+        </th>
         <td>${texto}</td>
         <td>
             <button type="button" class="btn btn-outline-danger btn-sm" data-indice=${indice} >x</button>
@@ -40,7 +39,8 @@ const atualizar = () => {
 
 const InserirItem = (evento) => {
     const tecla = evento.key;
-    if (tecla == 'Enter') {
+    
+    if (tecla == 'Enter' && evento.target.value != '' ) {
         const banco = pegarBanco();
         banco.push({ 'tarefa': evento.target.value, 'status': '' })
         EnviarBanco(banco);
