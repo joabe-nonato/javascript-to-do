@@ -1,7 +1,10 @@
-
-.lista-body{
+.lista-body {
     width: 499px;
     border: 1px #ccc solid;
     border-radius: 0.4ch;
     margin: 5px;
+}
+
+.sombra {
+    box-shadow: 3px 3px 9px #ccc;
 }

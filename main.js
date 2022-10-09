@@ -10,15 +10,15 @@ const novoItem = (texto, status = '', indice) => {
     const item = document.createElement('tr');
     item.classList.add('clsItem');
     item.innerHTML = `
-    <tr>
-        <th scope="row">
+    
+        <td scope="row">
         <input class="form-check-input" type="checkbox" ${status} data-indice=${indice} >
-        </th>
+        </td>
         <td>${texto}</td>
         <td>
             <button type="button" class="btn btn-outline-danger btn-sm" data-indice=${indice} >x</button>
         </td>
-    </tr>
+    
     `
     document.getElementById('tbListaTodo').appendChild(item);
 }
