@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .lista-body {
     width: 499px;
     border: 1px #ccc solid;
@@ -7,4 +13,35 @@
 
 .sombra {
     box-shadow: 3px 3px 9px #ccc;
+}
+
+
+.cls-alerta-publicar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cls-alerta-publicar div {
+    height: 100%;
+}
+
+.cls-alerta-publicar .publicar-botao button {
+    width: 100px;
+}
+
+.cls-alerta-publicar .publicar-texto {
+    width: 80%;
+    border-right: 1px solid #D6AD0B;
+    color: #D60B0B;
+}
+
+.cls-alerta-publicar .publicar-botao {
+    width: 130px;
+    padding: 3px;
+    text-align: center;
+    border: none;
 }
